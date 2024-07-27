@@ -1,0 +1,9 @@
+<!-- res/drawable/button_selected.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#20000000" /> <!-- Semi-transparent black -->
+    <corners android:radius="12dp" />
+    <stroke
+        android:width="2dp"
+        android:color="#4CAF50" /> <!-- Green outline -->
+</shape>

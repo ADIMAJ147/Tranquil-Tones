@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<!--    android:background="@drawable/gradient_background"-->
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:alpha="1"
+        android:fontFamily="serif"
+        android:text="Tranquil Tones"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<GridLayout
+android:id="@+id/gridLayout"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:columnCount="2"
+android:rowCount="1"
+android:padding="8dp"
+app:layout_constraintTop_toBottomOf="@id/title"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintBottom_toBottomOf="parent">
+
+<Button
+    android:id="@+id/button"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_row="0"
+    android:layout_column="0"
+    android:layout_columnWeight="1"
+    android:layout_margin="8dp"
+    android:background="@drawable/button_selector"
+    android:drawableTop="@drawable/nature"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:text="Nature"
+    android:textAlignment="center"
+    android:textColor="#333333"
+    android:textSize="16sp" />
+
+<Button
+    android:id="@+id/button2"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_row="0"
+    android:layout_column="1"
+    android:layout_columnWeight="1"
+    android:layout_margin="8dp"
+    android:background="@drawable/button_selector"
+    android:drawableTop="@drawable/animals"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:text="Animals"
+    android:textAlignment="center"
+    android:textColor="#333333"
+    android:textSize="16sp" />
+</GridLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
